@@ -35,11 +35,11 @@ services:
       dockerfile: DOCKERFILE
       args:
         NEXT_PUBLIC_BASE_URL: 'http://xprojects.in/api/v1'                 #replace 'yourdomain.com' with 'IP of yur ec2'
-        NEXT_PUBLIC_WS_BASE_URL: 'ws://ws:3001'
+        NEXT_PUBLIC_WS_BASE_URL: 'ws://3.7.69.118:3001'
     container_name: frontend
     environment:
       NEXT_PUBLIC_BASE_URL: 'http://xprojects.in/api/v1'
-      NEXT_PUBLIC_WS_BASE_URL: 'ws://ws:3001'
+      NEXT_PUBLIC_WS_BASE_URL: 'ws://3.7.69.118:3001'
     depends_on:
       - api
     networks:
